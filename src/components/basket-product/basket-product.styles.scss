@@ -1,0 +1,40 @@
+.basket-product {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1.4rem;
+    background-color: #3b2e2e;
+    border-radius: .4rem;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+
+    &-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &-name {
+        margin: 0;
+    }
+
+    &-amount {
+        color: #00b533;
+        font-weight: 900;
+        padding: 0 .6rem;
+    }
+
+    .arrow {
+        display: grid;
+        place-items: center;
+        width: 25px;
+        font-weight: 700;
+        height: 25px;
+        border-radius: 50px;
+        background: #c4c4c4;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+.flex {
+    display: flex;
+}

@@ -1,0 +1,56 @@
+.basket-container {
+  width: 400px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(19, 19, 19, 0.7);
+  background: linear-gradient(
+    0deg,
+    rgba(19, 19, 19, 0.9) 0%,
+    rgba(7, 7, 7, 0.95) 50%,
+    rgba(32, 32, 32, 0.9) 100%
+  );
+  z-index: 100;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  padding: 1rem;
+  transition: all 200ms ease-out;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: .6rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(56, 54, 54);
+    border-radius: 10px;
+  }
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-header {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  .close {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .basket {
+    & > * + * {
+      margin-top: 10px;
+    }
+  }
+
+  &.close {
+    right: -100%;
+  }
+}

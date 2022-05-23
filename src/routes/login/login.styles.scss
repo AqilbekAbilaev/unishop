@@ -1,0 +1,18 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(47,47,47,1) 0%, rgba(42,42,42,1) 28%, rgba(42,36,36,1) 46%, rgba(46,46,46,1) 71%, rgba(62,62,62,1) 100%);
+}
+
+.logo-container {
+    background-size: 60%;
+    padding: 1.5rem;
+    background-color: #0D0C0C;
+    border-radius: .75rem;
+}

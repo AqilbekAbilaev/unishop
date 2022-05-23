@@ -1,0 +1,17 @@
+.input-select-container {
+    display: flex;
+    align-items: center;
+
+    & > * {
+        width: 100%;
+    }
+    img {
+        margin-left: 1rem;
+        cursor: pointer;
+        width: auto;
+    }
+
+   & .select option {
+        color: black !important;
+    }
+}

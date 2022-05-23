@@ -1,0 +1,69 @@
+@mixin product-styles {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+@mixin center {
+  display: grid;
+  place-items: center;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "name name price"
+    "brand brand amount";
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: #4e3d3d;
+  padding: 0 0 1rem 2rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+
+  .product-name {
+    grid-area: name;
+  }
+
+  .product-price {
+    @include product-styles();
+    grid-area: price;
+    height: auto;
+    color: #00b533;
+  }
+
+  .product-brand {
+    grid-area: brand;
+    font-weight: 300;
+  }
+
+  .product-amount {
+    @include product-styles();
+    grid-area: amount;
+  }
+
+  .add-to-cart {
+    position: absolute;
+    right: -3rem;
+    bottom: -3rem;
+    font-size: 2rem;
+    transition: all 200ms ease-in-out, transform 250ms ease-in-out;
+    border-radius: 50px;
+    padding: 1rem;
+    aspect-ratio: 1;
+    width: 50px;
+    @include center();
+  }
+
+  &:hover .add-to-cart {
+    right: -0.7rem;
+    bottom: -1.3rem;
+    transform: rotate(180deg);
+    background: #00b533;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,22 @@
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    
+    & + .link {
+        margin-left: 2rem;
+    }
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}

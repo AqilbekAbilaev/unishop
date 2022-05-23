@@ -1,0 +1,31 @@
+
+.paystate-container {
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    
+}
+
+.profit {
+    color: #00b533;
+}
+
+.loss {
+    color: #d90707;
+
+    .icon-container {
+        background-color: #7b1c1c;
+    }
+}
+
+.icon-container {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    aspect-ratio: 1;
+    background-color: #5060B8;
+    border-radius: 50px;
+    padding: .6rem;
+    margin-right: 1rem;
+}

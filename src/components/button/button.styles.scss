@@ -1,0 +1,15 @@
+.button {
+  display: block;
+  margin: 0.8rem 0 0 auto;
+  padding: 0.6rem 2.8rem;
+  font-size: 1rem;
+  background-color: #00b533;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.button:active {
+  opacity: 0.8;
+}

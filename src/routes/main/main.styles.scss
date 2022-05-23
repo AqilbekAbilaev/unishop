@@ -1,0 +1,10 @@
+.main-container {
+    display: grid;
+    place-items: center;
+    padding: 10rem 0;
+
+    .welcome {
+        color: white;
+        font-size: 3rem;
+    }
+}
